@@ -2,26 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css"/>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css"/>
+  <title>Full Stack Developer Portfolio</title>
+  <style>
+    /* Add custom styles here */
+  </style>
+</head>
 
-  <body>
-    <header id="hero">
-        <h1 class="title">Cullen Knott</h1>
-        <nav>
-            <ul> 
-                <li class="navbar"><a href="#">About me</a></li>
-                <li class="navbar"><a href="#">Work</a></li>
-                <li class="navbar"><a href="#">Contact</a></li>
-                <li class="navbar"><a href="#">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Cullen Knott</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    
-  </body>
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Add your introduction and information about your skills and experience here.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <!-- project -->
+        <div class="p-2 col-lg-12 col-md-6 mb-6">
+          <div class="card bg-light">
+            <!-- live application URL and image -->
+            <a href="https://cullenknott.github.io/campground-center/" target="_blank"><img src="./assets/campground-center.png" class="card-img-top" alt="Project 1"></a>
+            <div class="card-body">
+              <h5 class="card-title">Campground-Center</h5>
+              <p class="card-text">This campground website is designed to provide information about campsites within a specific city. The website allows users to search for campsites by entering a city name. Upon searching, the website displays 10 campsites available in that city.</p>
+              <!-- GitHub repository URL -->
+              <a href="https://github.com/CullenKnott/campground-center" target="_blank" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+        <!-- project -->
+        <div class="p-2 col-lg-12 col-md-6 mb-6">
+          <div class="card bg-light">
+            <!-- live application URL and image -->
+            <a href="#" target="_blank"><img src="./assets/placeholder.png" class="card-img-top" alt="Project 2"></a> 
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Add a description of the project here.</p>
+              <!-- GitHub repository URL -->
+              <a href="#" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+        <!-- project -->
+        <div class="p-2 col-lg-12 col-md-6 mb-6">
+          <div class="card bg-light">
+            <!-- live application URL and image -->
+            <a href="#" target="_blank"><img src="./assets/placeholder.png" class="card-img-top" alt="Project 3"></a>
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Add a description of the project here.</p>
+              <!-- GitHub repository URL -->
+              <a href="#" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- Resume Section -->
+  <section id="resume" class="py-5 bg-light">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>Download my resume to learn more about me by clicking the button below.</p>
+      <a href="resume.pdf" class="btn btn-primary">Download resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact</h2>
+      <a class="p-2">858-353-9675</a>
+      <a class="p-2" href="mailto: cullenp.knott@gmail.com" target="_blank" class="font-weight-bold">Email</a>
+      <a class="p-2" href="https://github.com/CullenKnott" target="_blank" class="font-weight-bold">GitHub</a>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script></body>
+
 </html>
